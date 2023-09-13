@@ -1,0 +1,96 @@
+/* using an id it adds background color, margin right to the whole menu bar */
+/* height, font-family and font size*/
+
+/* declares the style declarations for the header tag */
+
+header{
+    margin-right: 10px;
+    height: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:medium;
+    }
+
+/* declares the style declarations for the body tag */
+
+body{
+    background-color:rgb(176, 227, 232);
+}
+
+/* declares the style declarations for the "cont" ID */
+
+#cont{
+    margin-top:30px;
+    margin: 50px;
+    background-color: rgb(208, 237, 240);
+    margin-left: 100px;
+    margin-left: 100px;
+    border:2px solid;
+}
+
+/* declares the style declarations for the "navbar" Class*/
+/* sets the background color. set the navbar
+to a fixed TOP position with width to 100%*/
+/* overflow hides overflowing content */
+
+.navbar {
+    overflow:hidden;
+    background-color:rgb(89, 185, 198) ;
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+/* when cursor is over links then colors will change */
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+/* declares the style declarations for the "fltLeft" ID */
+/* bascially move to the left */
+
+#fltLeft{float:left}
+
+/* declares the style declarations for the "fltRight" ID */
+/* bascially moves to the right */
+
+#fltRight{float:right}
+
+
+/* declares the style declarations for the "cont2" ID to have 
+the following values for background color, margin left
+and right and the border */
+
+#cont2{
+    background-color: rgb(208, 237, 240);
+    margin-left: 100px;
+    margin-right: 100px;
+    border:1px solid;
+}
+
+/* declares the style declarations for the "padding" Class */
+/* adds spacing all around */
+
+.padding{
+    padding:10px 10px 10px 10px;
+
+}
+
+/* declares the style declarations for the "box" Class 
+to have the following values for width, height, border
+text align backgroumd color margin(left and right) */
+/* padding top just adds spaces to the top */
+
+.box { 
+       width:90%;
+       height:250px;
+       border:3px ridge;
+       text-align:left;
+       background-color:aliceblue;
+       padding:10px;
+       margin-left:40px;
+       margin-right:40px;
+       padding-top: 10px;    
+     }
+     
