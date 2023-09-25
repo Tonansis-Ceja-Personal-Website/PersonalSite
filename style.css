@@ -1,3 +1,216 @@
+/* Sets the font style for the input fields for the form*/
+
+.Deco{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+  }
+  
+/* Sets the width for the input fields for the form */
+form {
+     width:90%;
+     max-width:600px;
+}
+
+/* Sets the margin, position for the input fields for the form */
+.inputgroup{
+    margin-bottom: 35px;
+    position:relative;
+
+}
+
+/* Sets the color, outline, font size and width for the "message" input field for the form */
+input, textarea{
+    width:100%;
+    padding:10px;
+    outline:0;
+    border:2px solid #fff;
+    color:#fff;
+    background: rgb(128, 221, 232) ;
+    font-size:28px;
+}
+/* Sets label for the form*/
+label{
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    padding:10px;
+    color:#fff;
+    cursor:text;
+    transition:0.2s;
+}
+
+/* Sets setting for the button  for the form*/
+button{
+    padding:10px 0;
+    color:#fff;
+    outline:none;
+    background:rgb(5, 102, 112);
+    border:1px solid #fff;
+    width:100%;
+    cursor:pointer;
+}
+
+/* move text out of input for the form*/
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size:27px;
+}
+
+/* Sets color change when cursor is over the button for the form*/
+.button:hover{
+    background-color: aqua;
+    color:black;
+}
+
+/* setting for the bubbles*/
+.bubbles img {
+    width:50px;
+    animation:bubble 10s linear infinite;
+}
+
+/* setting for the bubbles*/
+.bubbles{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    position:absolute;
+    bottom:-40px;
+}
+
+/* animation for bubbles for the bubbles*/
+@keyframes bubble{
+    0%{
+        transform:translateY(0);
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+
+    70%{
+        
+        opacity:1;
+    }
+
+
+    100%{
+        transform:translateY(-80vh);
+        opacity:0;
+    }
+    
+}
+
+/* delay settings for the bubbles for
+each bubble (child) */
+
+.bubbles img:nth-child(1){
+    width:30px;
+    animation-delay: 2s;  
+    }
+
+.bubbles img:nth-child(2){
+    animation-delay: 4s;
+   
+    }
+
+.bubbles img:nth-child(3){
+    animation-delay: .5s;
+    width:90px;
+    }
+
+.bubbles img:nth-child(4){
+    animation-delay: 1.2s;
+    width:40px;
+    }
+
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+
+    }
+
+.bubbles img:nth-child(6){
+    animation-delay: 6.5s;
+    width:30px;
+    }
+
+.bubbles img:nth-child(7){
+    animation-delay: 1.5s;
+    width:90px;
+    }
+
+.bubbles img:nth-child(8){
+    animation-delay: 3.5s;
+    width:65px;
+    }
+
+/* moves text to right */
+
+@keyframes slideInRight{
+    from{
+     transform:translateX(300px);
+    }
+    to{
+      transform:translateX(0);
+    }
+}
+
+.movingRight {
+    animation-name:slideInRight;
+    animation-duration:1s ;
+    animation-timing-function:ease-in ;
+    animation-delay:0s ;
+    animation-iteration-count: 3 ;
+    animation-direction: normal ;
+    animation-fill-mode: both ;
+
+    transform:translateX(-150px);
+}
+
+/* moves text to left */
+
+@keyframes slideInLeft{
+    from{
+     transform:translateX(-300);
+    }
+    to{
+      transform:translateX(0);
+    }
+}
+
+/*-- animation shorthand */
+.movingLeft {
+    animation:slideInLeft 1s ease-in 0s 3 normal forwards;
+   
+    transform:translateX(-150px);
+}
+
+.movingRight1 {
+    animation:slideInRight 1s ease-in 0s 1 normal forwards;
+   
+    transform:translateX(-150px);
+}
+
+
+.movingRight3 {
+    animation:slideInRight 3s ease-in 0s 1 normal forwards;
+   
+    transform:translateX(-150px);
+}
+
+.movingRight5 {
+    animation:slideInRight 5s ease-in 0s 1 normal forwards;
+   
+    transform:translateX(-150px);
+}
+
 /* using an id it adds background color, margin right to the whole menu bar */
 /* height, font-family and font size*/
 
@@ -13,7 +226,7 @@ header{
 /* declares the style declarations for the body tag */
 
 body{
-    background-color:rgb(176, 227, 232);
+    background-color:  rgb(176, 227, 232);
 }
 
 /* declares the style declarations for the "cont" ID */
@@ -77,6 +290,20 @@ and right and the border */
 
 }
 
+/* sets radius(trims image to circle shape) when cursor is over image*/
+.circl img:hover{
+    border-radius:50%;
+}
+
+/* sets radius(trims image to circle shape) when cursor is over image
+sets other font syles*/
+.circl2:hover{
+    border-radius:45%;
+    color:rgb(10, 74, 108);
+    font-size: 60px;
+    text-decoration-line:underline;
+
+}
 /* declares the style declarations for the "box" Class 
 to have the following values for width, height, border
 text align backgroumd color margin(left and right) */
@@ -84,7 +311,7 @@ text align backgroumd color margin(left and right) */
 
 .box { 
        width:90%;
-       height:250px;
+       height:400px;
        border:3px ridge;
        text-align:left;
        background-color:aliceblue;
@@ -93,4 +320,46 @@ text align backgroumd color margin(left and right) */
        margin-right:40px;
        padding-top: 10px;    
      }
+
+/* to illustrate change depending on device .
+I used @media to change the  font size of the picasso 
+page and the submitted page's text. */
+
+/*********** for mobile phones  ****************/
+
+@media(width<=480px){    
+    p{font-size:20px; font-weight:50em; align-content: center; 
+             font-style: italic; font-family: Cambria, Cochin, Georgia, 
+             Times, 'Times New Roman', serif;}  
      
+    .change{font-size:20px; font-weight:50em; align-content: center; 
+             font-style: italic; font-family: Cambria, Cochin, Georgia, 
+             Times, 'Times New Roman', serif;}  
+
+             }
+
+/************* for ipad **************/
+
+@media(480px<width<=1024px){
+     p{ font-size:30px; font-weight:50em; align-content: center; 
+             font-style: italic; font-family: Cambria, Cochin, Georgia, 
+             Times, 'Times New Roman', serif;} 
+ 
+     .change{font-size:30px; font-weight:50em; align-content: center; 
+             font-style: italic; font-family: Cambria, Cochin, Georgia, 
+             Times, 'Times New Roman', serif;}      
+                  
+                   } 
+
+/********* for desktop **********/
+
+@media(1024px<width){
+    p{ font-size:40px; font-weight:50em; align-content: center; 
+                font-style: italic; font-family: Cambria, Cochin, Georgia, 
+                Times, 'Times New Roman', serif;} 
+
+     .change{font-size:40px; font-weight:50em; align-content: center; 
+     font-style: italic; font-family: Cambria, Cochin, Georgia, 
+     Times, 'Times New Roman', serif;}  
+
+                     }
