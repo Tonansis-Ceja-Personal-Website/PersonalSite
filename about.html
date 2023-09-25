@@ -1,209 +1,271 @@
 <!doctype html>
 <html lang="en-US">
 
+<!-- The head tag gives you informatin about the web page -->
+<!--grid-gap:1em;-->
 <head>
-     <meta charset="UTF-8"/>
+     <meta charset="UTF-8">
      <meta name="viewport"
-     content="width=device-width, initial-scale=1"/>
+           content="width=device-width, initial-scale=1"/>
 
-     <!-- Writes Personal Site on the tab -->
-           <title> Personal Site</title>
+           <!-- Displays "Personal Site Improved" on the tab -->
+           <title> Personal Site Improved</title>
 
-     <!-- Links the css file to my html file to use External CSS -->
+           <!-- Links the css file to my html file so I can use external CSS-->
            <link rel="stylesheet" href="style.css">
-</head>
 
+           <!-- Links to my javascript file-->
+           <script src = "javascript.js"> </script>
+
+           <!-- In this style tag classes are declared
+                and a 3 row grid is created in which background colors are set. 
+                first row has no background. Another class is declared which
+                creates a nested grid in the first row of the first grid. 
+                For the body of this a background is set to an image with no
+                repeat and covers the whole page.
+                 -->
+                 <!-- I used the units fr(fractions), em and px --> 
+                 <style>
+                  
+                    .wrapper{
+                             display:grid;
+                             grid-template-rows:max-content;
+
+                            }
+  
+                     .wrapper>div:nth-child(1){
+                                               background:aliceblue;
+                                               border:solid;
+                                              }   
+  
+                     .wrapper>div:nth-child(2) {
+                                                background:aliceblue;
+                                               }
+                     .wrapper>div:nth-child(3){
+                                               background:aliceblue;
+                                              }  
+                     .wrapper>div:nth-child(4){
+                                               background:aliceblue;
+                                              }                         
+  
+  
+                     body {background-color: rgb(188, 244, 244); background-size:cover}
+  
+             </style> 
+</head>
 
 <body>
 
 <header>
-    
-        <!-- Creates a menu navigation bar in header tag-->
-        <!-- Names "navbar" as a class in this DIV section and is used to point
-             to a style declaration in the css file -->           
-        <div class="navbar">
+      <!-- Creates a menu navigation bar in the header tag -->
+      <!-- Names "navbar" as a class in this DIV section and is used to point
+           to a style declaration in the css file-->
 
-                <!-- using the span tag to write "Mary Smith"  in the header.
-                     Have "Mary Smith" float to left with specific font size, family color
-                     I added padding on left side so "Mary Smith" is not so close to left 
-                     edge of page-->
+      <div class="navbar">
 
-                <span style="font-size:40px; font-family: cursive; float:left;
-                             color:aliceblue; padding-left: 5px" >Mary Smith</span>
+             <!-- using the span tag to write "Mary Smith" in the header.
+                 Having  "Mary Smith" float to left with specific font size, family color
+                 I added padding on left side so "Mary Smith" is not so close to left 
+                 edge of page  -->
 
-                 <!--links in navigation bar. They go to my Portfolio, About and the 
+             <span style="font-size:40px; font-family: cursive; float:left;
+                          color:aliceblue; padding-left: 5px ">
+                          Mary Smith
+             </span>
+
+            <!--links in navigation bar. They go to my Portfolio, About and the 
                      Home page. All float to right. Assigns font size, margins and 
-                     adds padding to the right side of link-->           
-                   
-                <a href="portfolio.html" style="font-size:28px; margin-top:10px;
-                         margin-right:10px;padding-right: 10px; float:right; "> PORTFOLIO</a>
-
-                <a href="about.html" style="font-size:30px; margin-top:10px; 
-                         padding-right: 10px;float:right;"> ABOUT </a>
-
-                <a href="index.html" style="font-size:30px; margin-top:10px; 
-                         padding-right: 10px;float:right;"> HOME </a> 
-                                                   
-        </div> 
-
-</header>
-   
-<!-- Names "cont2" as an ID, in this Div section -->
-
-    <div id="cont2">
-
-           <!-- use H1 tag to write "When I'm......". Assigns font size
-               color, weight. Adds margin and padding to left side.-->
-
-           <h1 style="font-size:30px;color:rgb(55, 55, 131); font-weight:bolder;
-                  padding-left: 20px; margin-top:40px">
-                  When I'm not helping teams be productive while maintaing a
-                  healthy work-life balance, I'm doing the following things.     
-           </h1>
-
-    <!-- Creates a horizontal line accross the whole page -->
-
-    <hr>
+                     adds padding to the right side of link--> 
             
-            <!-- use H2 tag to write "Running". Assigns font size
+            <a href="contact.html" style="font-size:28px; margin-top:10px; 
+                     margin-right:10px;padding-right: 10px; float:right; "> CONTACT</a>
+            <a href="portfolio.html" style="font-size:28px; margin-top:10px; 
+                     margin-right:10px;padding-right: 10px; float:right; "> PORTFOLIO</a>
+            <a href="about.html" style="font-size:30px; margin-top:10px; 
+                     padding-right: 10px;float:right;"> ABOUT </a>
+            <a href="index.html" style="font-size:30px; margin-top:10px; 
+                     padding-right: 10px;float:right;"> HOME </a> 
+
+      </div>
+</header>
+
+<div class="wrapper">
+           
+    <!-- row 1 of grid -->
+
+    <div style=" width: 80%; margin-left:10%;">
+     <!--row 1 --> 
+               <!-- use H1 tag to write "When I'm......". Assigns font size
+               color, weight. Adds margin and padding to left side.-->
+               
+               <h1 style="font-size:30px;color:rgb(55, 55, 131); font-weight:bolder;
+                          padding-left: 20px; margin-top:50px;">
+                          When I'm not helping teams be productive while maintaing a
+                          healthy work-life balance, I'm doing the following things.     
+               </h1> 
+               
+    </div>
+
+    <!-- row 2 of grid-->
+
+    <div class="movingRight circl" style="width:80%; margin-left:10%; border:solid" >
+      <!--row 2 --> 
+
+               <!-- use H2 tag to write "Running". Assigns font size
                and family(font style). Adds padding to left and bottom sides.-->
 
-            <h2 style="font-size:30px;font-family:Verdana, Geneva, Tahoma, sans-serif; 
-                       padding-left: 20px; padding-bottom:1px;"> 
-                Running
-            </h2>
- 
+               <h2  style="font-size:30px;font-family:Verdana, Geneva, Tahoma, sans-serif;
+               padding-left: 20px; padding-bottom:1px;"> 
+                          Running
+               </h2>
 
-   <!-- Displays the "running.jpg" image. having it float to left. Sets height and width.
-        Also creates a class called "padding" which adds padding to the image.-->
 
-   <img id="fltLeft" class="padding" src="running.jpg" height="140" width="200" >
- 
-            <!-- creates a section using the p tag. sets font size and adds padding to left-->
+                <!-- Displays the "running.jpg" image. having it float to left. 
+                Sets height and width. Also creates a class called "padding"
+                which adds padding to the image.-->
 
-            <p style="font-size: larger; padding-left:10px">  Ex consectetur irure aute dolore sunt enim minim
-                 velit ipsum. Commodo amet voluptate reprehenderit commodo velit magna enim
-                 veniam do elit nostrud ea. Occaecat Lorem eu duis aliqua fugiat reprehenderit 
-                 dolore sit elit mollit labore reprehenderit qui. Irure tempor magna 
-                 exercitation et tempor aute consequat occaecat. Velit commodo nulla veniam 
-                 sit eu adipisicing do ut elit in. Qui sint enim nulla duis mollit anim dolor
-                 pariatur laborum cupidatat. adipisicing elit ullamco velit aliqua 
-                 consectetur. Nostrud esse laboris occaecat do culpa et veniam reprehenderit. 
-                 Pariatur ad in aute do nisi ullamco aute Lorem excepteur id proident consectetur 
-                 fugiat. 
-            </p>
+               <img id="fltLeft" class="padding" src="running.jpg" height="140"
+                width="200" >
 
-            <!-- creates a section using the p tag. sets font size and adds padding to left-->
+    <!-- creates a section using the p tag. sets font size and adds padding to left-->
 
-            <p style="font-size: larger; padding-left:10px">  Ex consectetur irure aute dolore sunt enim minim
-                velit ipsum. Commodo amet voluptate reprehenderit commodo velit magna enim
-                veniam do elit nostrud ea. Occaecat Lorem eu duis aliqua fugiat reprehenderit 
-                dolore sit elit mollit labore reprehenderit qui. Irure tempor magna 
-                exercitation et tempor aute consequat occaecat. Velit commodo nulla veniam 
-                sit eu adipisicing do ut elit in. Qui sint enim nulla duis mollit anim dolor
-                pariatur laborum cupidatat. adipisicing elit ullamco velit aliqua 
-                consectetur. Nostrud esse laboris occaecat do culpa et veniam reprehenderit. 
-                Pariatur ad in aute do nisi ullamco aute Lorem excepteur id proident consectetur 
-                fugiat. 
-           </p>
+    <p style="font-size: larger; padding:10px 10px">  Ex consectetur irure aute dolore sunt enim minim
+         velit ipsum. Commodo amet voluptate reprehenderit commodo velit magna enim
+         veniam do elit nostrud ea. Occaecat Lorem eu duis aliqua fugiat reprehenderit 
+         dolore sit elit mollit labore reprehenderit qui. Irure tempor magna 
+         exercitation et tempor aute consequat occaecat. Velit commodo nulla veniam 
+         sit eu adipisicing do ut elit in. Qui sint enim nulla duis mollit anim dolor
+         pariatur laborum cupidatat. adipisicing elit ullamco velit aliqua 
+         consectetur. Nostrud esse laboris occaecat do culpa et veniam reprehenderit. 
+         Pariatur ad in aute do nisi ullamco aute Lorem excepteur id proident consectetur 
+         fugiat. 
+    </p>
 
-<!--Creates a line break -->
-    <br>
+    <!-- creates a section using the p tag. sets font size and adds padding to left-->
 
-<!-- Creates a horizontal line accross the whole page -->  
-    <hr>
+    <p style="font-size: larger; padding-left:10px">  Ex consectetur irure aute dolore sunt enim minim
+        velit ipsum. Commodo amet voluptate reprehenderit commodo velit magna enim
+        veniam do elit nostrud ea. Occaecat Lorem eu duis aliqua fugiat reprehenderit 
+        dolore sit elit mollit labore reprehenderit qui. Irure tempor magna 
+        exercitation et tempor aute consequat occaecat. Velit commodo nulla veniam 
+        sit eu adipisicing do ut elit in. Qui sint enim nulla duis mollit anim dolor
+        pariatur laborum cupidatat. adipisicing elit ullamco velit aliqua 
+        consectetur. Nostrud esse laboris occaecat do culpa et veniam reprehenderit. 
+        Pariatur ad in aute do nisi ullamco aute Lorem excepteur id proident consectetur 
+        fugiat. 
+   </p>
 
-            <!-- use H2 tag to write "Biking". Assigns font size
+</div>
+
+    <!-- declares two class one for moving the text the other for changing the shape of 
+    the image.-->
+
+    <div class="movingLeft circl" style="width:80%; margin-left:10%; border:solid" class="circl">
+        <!--row 3 --> 
+
+        <!-- use H2 tag to write "Biking". Assigns font size
                and family(font style). Adds padding to bottom side.-->
 
-            <h2 style="font-size:30px;font-family:Verdana, Geneva, Tahoma, sans-serif; 
-                       padding-left: 20px; padding-bottom:1px;"> 
-                Biking
-            </h2>
+               <h2  style="font-size:30px;font-family:Verdana, Geneva, Tahoma, 
+                          sans-serif; padding-left: 20px; padding-bottom:1px;"> 
+                         Biking
+               </h2>
 
-<!-- Displays the "biking.jpg" image. having it float to left. Sets height and width.
-        Also creates a class called "padding" which adds padding to the image.-->
+        <!-- Displays the "biking.jpg" image. having it float to left. Sets
+             height and width. Also creates a class called "padding" which 
+             adds padding to the image.-->
 
-    <img id="fltRight" class="padding" src="biking.jpg" height="140" width="200" >
+        <img id="fltRight" class="padding" src="biking.jpg" height="140" width="200" >
 
-            <!-- creates a section using the p tag. sets font size and adds padding to left-->
+        <!-- creates a section using the p tag. sets font size and adds padding to left-->
 
-            <p style="font-size: larger; padding-left:10px">  Ex consectetur irure aute dolore sunt enim minim
-                velit ipsum. Commodo amet voluptate reprehenderit commodo velit magna enim
-                veniam do elit nostrud ea. Occaecat Lorem eu duis aliqua fugiat reprehenderit 
-                dolore sit elit mollit labore reprehenderit qui. Irure tempor magna 
-                exercitation et tempor aute consequat occaecat. Velit commodo nulla veniam 
-                sit eu adipisicing do ut elit in. Qui sint enim nulla duis mollit anim dolor
-                pariatur laborum cupidatat. adipisicing elit ullamco velit aliqua 
-                consectetur. Nostrud esse laboris occaecat do culpa et veniam reprehenderit. 
-                Pariatur ad in aute do nisi ullamco aute Lorem excepteur id proident consectetur 
-                fugiat. 
-            </p>
-            
-            <!-- creates a section using the p tag. sets font size and adds padding to left-->
+        <p style="font-size: larger; padding-left:10px">  Ex consectetur irure
+                  aute dolore sunt enim minim velit ipsum. Commodo amet voluptate 
+                  reprehenderit commodo velit magna enim veniam do elit nostrud
+                  ea. Occaecat Lorem eu duis aliqua fugiat reprehenderit dolore
+                   sit elit mollit labore reprehenderit qui. Irure tempor magna 
+                   exercitation et tempor aute consequat occaecat. Velit commodo 
+                   nulla veniam sit eu adipisicing do ut elit in. Qui sint enim 
+                   nulla duis mollit anim dolor pariatur laborum cupidatat. 
+                   adipisicing elit ullamco velit aliqua consectetur. Nostrud esse 
+                   laboris occaecat do culpa et veniam reprehenderit. Pariatur ad 
+                   in aute do nisi ullamco aute Lorem excepteur id proident 
+                   consectetur fugiat. 
+    </p>
+    
+    <!-- creates a section using the p tag. sets font size and adds padding to left-->
 
-            <p style="font-size: larger; padding-left:10px">  Ex consectetur irure aute dolore sunt enim minim 
-                velit ipsum. Commodo amet voluptate reprehenderit commodo velit magna enim 
-                veniam do elit nostrud ea. Occaecat Lorem eu duis aliqua fugiat reprehenderit
-                dolore sit elit mollit labore reprehenderit qui. Irure tempor magna 
-                exercitation et tempor aute consequat occaecat. Velit commodo nulla veniam 
-                sit eu adipisicing do ut elit in. Qui sint enim nulla duis mollit anim dolor
-                pariatur laborum cupidatat. adipisicing elit ullamco velit aliqua consectetur.
-                Nostrud esse laboris occaecat do culpa et veniam reprehenderit. Pariatur ad 
-                in aute do nisi ullamco aute Lorem excepteur id proident consectetur fugiat. 
-                Minim exercitation nostrud laboris in.
-            </p>
+    <p style="font-size: larger; padding-left:10px">  Ex consectetur irure aute 
+                   dolore sunt enim minim velit ipsum. Commodo amet voluptate 
+                   reprehenderit commodo velit magna enim veniam do elit nostrud 
+                   ea. Occaecat Lorem eu duis aliqua fugiat reprehenderit dolore 
+                   sit elit mollit labore reprehenderit qui. Irure tempor magna 
+                   exercitation et tempor aute consequat occaecat. Velit commodo
+                   nulla veniam sit eu adipisicing do ut elit in. Qui sint enim 
+                   nulla duis mollit anim dolor pariatur laborum cupidatat. 
+                   adipisicing elit ullamco velit aliqua consectetur. Nostrud esse 
+                   laboris occaecat do culpa et veniam reprehenderit. Pariatur ad 
+                   in aute do nisi ullamco aute Lorem excepteur id proident 
+                   consectetur fugiat. 
+       
+    </p>
 
- <!--Creates a line break -->           
-    <br>
 
-<!-- Creates a horizontal line accross the whole page --> 
-    <hr>
+    </div>
 
-             <!-- use H2 tag to write "Hiking". Assigns font size
+    <!-- declares two class one for moving the text the other for changing the shape of 
+    the image.-->
+
+    <div class= "movingRight circl" style="width:80%; margin-left:10%; border:solid" class="circl">
+        <!--row 4 --> 
+
+        <!-- use H2 tag to write "Hiking". Assigns font size
                and family(font style). Adds padding left side and to bottom side.-->
 
-            <h2 style="font-size:30px;font-family:Verdana, Geneva, Tahoma, sans-serif; 
-                       padding-left: 20px;padding-bottom:1px;"> 
-                Hiking
-            </h2>
+               <h2 style="font-size:30px;font-family:Verdana, Geneva, Tahoma, sans-serif; 
+                          padding-left: 20px;padding-bottom:1px;"> 
+                  Hiking
+               </h2>
 
- <!-- Displays the "hiking.jpg" image. having it float to left. Sets height and width.
-        Also creates a class called "padding" which adds padding to the image.-->
+<!-- Displays the "hiking.jpg" image. having it float to left. Sets height and width.
+Also creates a class called "padding" which adds padding to the image.-->
 
 <img id="fltLeft" class="padding" src="hiking.jpg" height="140" width="200" >
 
-            <!-- creates a section using the p tag. sets font size and adds padding to left-->
+    <!-- creates a section using the p tag. sets font size and adds padding to left-->
 
-            <p style="font-size: larger; padding-left:10px">  Ex consectetur irure aute dolore sunt enim minim 
-                velit ipsum. Commodo amet voluptate reprehenderit commodo velit magna enim 
-                veniam do elit nostrud ea. Occaecat Lorem eu duis aliqua fugiat reprehenderit
-                dolore sit elit mollit labore reprehenderit qui. Irure tempor magna 
-                exercitation et tempor aute consequat occaecat. Velit commodo nulla veniam 
-                sit eu adipisicing do ut elit in. Qui sint enim nulla duis mollit anim dolor 
-                pariatur laborum cupidatat. adipisicing elit ullamco velit aliqua consectetur.
-                Nostrud esse laboris occaecat do culpa et veniam reprehenderit. Pariatur 
-                ad in aute do nisi ullamco aute Lorem excepteur id proident consectetur fugiat.
-                Minim exercitation nostrud laboris in.
-            </p>
+    <p style="font-size: larger; padding-left:10px">  Ex consectetur irure aute dolore sunt enim minim 
+        velit ipsum. Commodo amet voluptate reprehenderit commodo velit magna enim 
+        veniam do elit nostrud ea. Occaecat Lorem eu duis aliqua fugiat reprehenderit
+        dolore sit elit mollit labore reprehenderit qui. Irure tempor magna 
+        exercitation et tempor aute consequat occaecat. Velit commodo nulla veniam 
+        sit eu adipisicing do ut elit in. Qui sint enim nulla duis mollit anim dolor 
+        pariatur laborum cupidatat. adipisicing elit ullamco velit aliqua consectetur.
+        Nostrud esse laboris occaecat do culpa et veniam reprehenderit. Pariatur 
+        ad in aute do nisi ullamco aute Lorem excepteur id proident consectetur fugiat.
+        Minim exercitation nostrud laboris in.
+    </p>
 
 
-            <!-- creates a section using the p tag. sets font size and adds padding to left-->
+    <!-- creates a section using the p tag. sets font size and adds padding to left-->
 
-            <p style="font-size: larger; padding-left:10px">  Ex consectetur irure aute dolore sunt enim minim 
-                velit ipsum. Commodo amet voluptate reprehenderit commodo velit magna enim
-                veniam do elit nostrud ea. Occaecat Lorem eu duis aliqua fugiat reprehenderit
-                dolore sit elit mollit labore reprehenderit qui. Irure tempor magna 
-                exercitation et tempor aute consequat occaecat. Velit commodo nulla veniam 
-                sit eu adipisicing do ut elit in. Qui sint enim nulla duis mollit anim dolor
-                pariatur laborum cupidatat. adipisicing elit ullamco velit aliqua consectetur.
-                Nostrud esse laboris occaecat do culpa et veniam reprehenderit. Pariatur 
-                ad in aute do nisi ullamco aute Lorem excepteur id proident consectetur fugiat.
-                Minim exercitation nostrud laboris in.
-            </p>
+    <p style="font-size: larger; padding-left:10px">  Ex consectetur irure aute dolore sunt enim minim 
+        velit ipsum. Commodo amet voluptate reprehenderit commodo velit magna enim
+        veniam do elit nostrud ea. Occaecat Lorem eu duis aliqua fugiat reprehenderit
+        dolore sit elit mollit labore reprehenderit qui. Irure tempor magna 
+        exercitation et tempor aute consequat occaecat. Velit commodo nulla veniam 
+        sit eu adipisicing do ut elit in. Qui sint enim nulla duis mollit anim dolor
+        pariatur laborum cupidatat. adipisicing elit ullamco velit aliqua consectetur.
+        Nostrud esse laboris occaecat do culpa et veniam reprehenderit. Pariatur 
+        ad in aute do nisi ullamco aute Lorem excepteur id proident consectetur fugiat.
+        Minim exercitation nostrud laboris in.
+    </p>
 
+        
+    </div>
 
 </div>
 
 </body>
+
 </html>
