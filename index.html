@@ -1,101 +1,114 @@
 <!doctype html>
 <html lang="en-US">
 
-<!-- the head tag gives you information about a web page-->
+<!-- The head tag gives you informatin about the web page -->
+
 <head>
-     <meta charset="UTF-8"/>
-     <meta name="viewport"
-     content="width=device-width, initial-scale=1"/>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-U-Compatible" content="IE=edge">
+     <meta name="viewport"content="width=device-width, initial-scale=1"/>
 
-           <!-- Writes "Personal Site" on the tab -->
-           <title> Personal Site</title>
+           <!-- Displays "Personal Site Improved" on the tab -->
+           <title> Personal Site Improved</title>
 
-           <!-- Links the css file to my html file so I can use External CSS -->
+           <!-- Links the css file to my html file so I can use external CSS-->
            <link rel="stylesheet" href="style.css">
- 
-           <!-- Links to my javascript file-->
-           <script  src = "javascript.js" > </script>
 
+           <!-- Links to my javascript file-->
+           <script src = "javascript.js"> </script>
 </head>
 
-
 <body>
-    
+
 <header>
-       <!-- Creates a menu navigation bar in the header tag-->
-       <!-- Names "navbar" as a class in this DIV section and is used to point
-            to a style declaration in the css file -->  
+      <!-- Creates a menu navigation bar in the header tag -->
+      <!-- Names "navbar" as a class in this DIV section and is used to point
+           to a style declaration in the css file-->
 
-       <div class="navbar">
+      <div class="navbar">
 
-                <!-- using the span tag to write "Mary Smith"  in the header.
-                     Have "Mary Smith" float to left with specific font size, family color
-                     I added padding on left side so "Mary Smith" is not so close to left 
-                     edge of page-->
+             <!-- using the span tag to write "Mary Smith" in the header.
+                 Having  "Mary Smith" float to left with specific font size, family color
+                 I added padding on left side so "Mary Smith" is not so close to left 
+                 edge of page  -->
 
-                <span style="font-size:40px; font-family: cursive; float:left;
-                        color:aliceblue; padding-left: 5px" >Mary Smith</span>
-          
-                <!--links in navigation bar. They go to my Portfolio, About and the 
+             <span style="font-size:40px; font-family: cursive; float:left;
+                          color:aliceblue; padding-left: 5px ">
+                          Mary Smith
+             </span>
+
+            <!--links in navigation bar. They go to my Portfolio, About and the 
                      Home page. All float to right. Assigns font size, margins and 
-                     adds padding to the right side of link-->
+                     adds padding to the right side of link--> 
+            
+            <a href="contact.html" style="font-size:28px; margin-top:10px; 
+                     margin-right:10px;padding-right: 10px; float:right; "> CONTACT</a>
+            <a href="portfolio.html" style="font-size:28px; margin-top:10px; 
+                     margin-right:10px;padding-right: 10px; float:right; "> PORTFOLIO</a>
+            <a href="about.html" style="font-size:30px; margin-top:10px; 
+                     padding-right: 10px;float:right;"> ABOUT </a>
+            <a href="index.html" style="font-size:30px; margin-top:10px; 
+                     padding-right: 10px;float:right;"> HOME </a> 
 
-                <a href="portfolio.html" style="font-size:28px; margin-top:10px; 
-                         margin-right:10px;padding-right: 10px; float:right; "> PORTFOLIO</a>
-                <a href="about.html" style="font-size:30px; margin-top:10px; 
-                         padding-right: 10px;float:right;"> ABOUT </a>
-                <a href="index.html" style="font-size:30px; margin-top:10px; 
-                         padding-right: 10px;float:right;"> HOME </a> 
-                                          
-        </div>  
-
+      </div>
 </header>
 
-<!-- Names "cont" as an ID, in this Div section-->
+<!-- Names "cont" as an ID, in this Div section -->
 
 <div id="cont">
 
-          <!-- use H1 tag to write "Developer, Videographer...". Assigns font size
-               color, weight and style to text. adds padding to left side.-->
+      <!-- use H1 tag to write "Developer, Videographer...". Assigns font size
+           color, weight and style to text. adds padding to left side.-->
 
-          <h1 style="font-size:40px;color:rgb(10, 62, 108); font-weight:bolder;
-              font-style: italic; padding-left: 20px;">
-                      Developer, videographer, math tutor.
-          </h1>
-     
-          <!-- use h2 tag to write the text " Interested in improving....". Sets font size,
-               color and family. Adds padding to left side.-->
-
-          <h2 style="font-size:larger;color:rgb(10, 62, 108);font-family:Verdana, Geneva, 
-                     Tahoma, sans-serif; padding-left: 20px;"> 
-                     Interested in improving development processes for teams big 
-                     and small, and helping new developers find their way.
-          </h2>
-
-<!-- adds 2 line breaks for spacing of text -->
-
-     <br>
-     <br>
-     
-          <!-- using nesting tags. Centers and sets text to italics. 
-               Use h1 tag for text.-->
-
-          <center>
-               <i>
-                     <h1>"Trust but verify." </h1>
-                     <h1> - Ronald Reagan<h1>
-
-               </i>
-          </center>
+      <h1 style="font-size:40px;color:rgb(10, 62, 108); font-weight:bolder;
+                 font-style: italic; padding-left: 20px;">
+                       Developer, videographer, math tutor.
+      </h1>
+      
+      <!-- use h2 tag to write the text " Interested in improving....". Sets font size,
+           color and family. Adds padding to left side.-->
+ 
+      <h2 style="font-size:larger;color:rgb(10, 62, 108);font-family:Verdana, Geneva, 
+                 Tahoma, sans-serif; padding-left: 20px;"> 
+                      Interested in improving development processes for teams big 
+                      and small, and helping new developers find their way.
+      </h2>
 
 <!-- adds 2 line breaks for spacing of text -->
 
-     <br>
-     <br>
+<br>
+<br>
+
+     <!-- using nesting tags. Centers and sets text to italics. 
+          Use h1 tag for text.-->
+
+     <center>
+          <i>
+                <h1 class="movingLeft">"Trust but verify." </h1>
+                <h1 class="movingRight"> - Ronald Reagan<h1>
+
+          </i>
+     </center>
+
+<!-- adds 2 line breaks for spacing of text -->
+
+<br>
+<br>
 
 </div>
+     <!-- declares a the class bubbles and creates 8 circular copies of
+     the trustbut... image -->
+     <div class="bubbles">
+           <img src="trustButVerify3.png" style="border-radius:50%;"  >
+           <img src="trustButVerify3.png" style="border-radius:50%;"  >
+           <img src="trustButVerify3.png" style="border-radius:50%;"  >
+           <img src="trustButVerify3.png" style="border-radius:50%;" >
+           <img src="trustButVerify3.png" style="border-radius:50%;" >
+           <img src="trustButVerify3.png" style="border-radius:50%;" >
+           <img src="trustButVerify3.png" style="border-radius:50%;"  >
+           <img src="trustButVerify3.png" style="border-radius:50%;"  >
+
+     </div>
 
 </body>
-
-
 </html>
