@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-US">
+
+<!-- The head tag gives you informatin about the web page -->
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-U-Compatible" content="IE=edge">
+     <meta name="viewport"
+           content="width=device-width, initial-scale=1"/>
+
+           <!-- Displays "Personal Site Improved" on the tab -->
+           <title> Personal Site Improved</title>
+
+           <!-- Links the css file to my html file so I can use external CSS-->
+           <link rel="stylesheet" href="style.css">
+
+           <!-- Links to my javascript file-->
+           <script src = "javascript.js"> </script>
+</head>
+
+<body>
+          ">
+    <header>
+        <!-- Creates a menu navigation bar in the header tag -->
+        <!-- Names "navbar" as a class in this DIV section and is used to point
+             to a style declaration in the css file-->
+  
+        <div class="navbar">
+  
+               <!-- using the span tag to write "Mary Smith" in the header.
+                   Having  "Mary Smith" float to left with specific font size, family color
+                   I added padding on left side so "Mary Smith" is not so close to left 
+                   edge of page  -->
+  
+               <span style="font-size:40px; font-family: cursive; float:left;
+                            color:aliceblue; padding-left: 5px ">
+                            Mary Smith
+               </span>
+  
+              <!--links in navigation bar. They go to my Portfolio, About and the 
+                       Home page. All float to right. Assigns font size, margins and 
+                       adds padding to the right side of link--> 
+              
+              <a href="contact.html" style="font-size:28px; margin-top:10px; 
+                       margin-right:10px;padding-right: 10px; float:right; "> CONTACT</a>
+              <a href="portfolio.html" style="font-size:28px; margin-top:10px; 
+                       margin-right:10px;padding-right: 10px; float:right; "> PORTFOLIO</a>
+              <a href="about.html" style="font-size:30px; margin-top:10px; 
+                       padding-right: 10px;float:right;"> ABOUT </a>
+              <a href="index.html" style="font-size:30px; margin-top:10px; 
+                       padding-right: 10px;float:right;"> HOME </a> 
+  
+        </div>
+    </header>
+
+             <!-- use H1 tag to write "Please enter your contact info.". Assigns font size
+             color, weight and style to text. adds padding to left side. declares class to 
+              move text-->
+
+             <center>
+                 <h1  class="movingLeft" style="font-size:40px;color:rgb(10, 62, 108); font-weight:bolder;
+                             font-style: italic; padding-left: 20px ; margin-top: 10%;">
+                    Please enter your contact information.
+                 </h1>
+            </center>
+             
+        
+                <!--Centers and creates a html Form which will run formSubmitted.html
+                     after the Send Contact button is clicked-->
+
+                <div class ="Deco">
+                      <form method="post" action="formSubmitted.html">
+
+                         <!-- declares a class, sets font stylefor name input -->
+
+                              <div class="inputgroup"  style=" font-weight:bolder;
+                              font-style: italic; font-size:30px; ">
+                                   <input type="text" id="name" required>
+                                   <label for ="name"> Name </label>
+                              </div>
+
+                         <!-- declares a class, sets font style for name input -->
+
+                              <div class="inputgroup" style=" font-weight:bolder;
+                              font-style: italic; font-size:30px; " >
+                                   <input type="email" id="email" required>
+                                   <label for ="email"> Email</label>
+                              </div>
+                         
+                         <!-- declares a class, sets font style for email input -->
+
+                              <div class="inputgroup"  style=" font-weight:bolder;
+                              font-style: italic; font-size:30px; " >
+                                   <textarea id="message" rows="10" required></textarea>
+                                   <label for ="message"> Please type your message</label>
+                              </div>
+                         
+                         <!-- declares a class, sets font style for button -->
+
+                              <button class ="button" type="submit" style="font-size:30px;">
+                                   SUBMIT
+                              </button>
+         
+                       </form>
+               
+                  </div>
+               
+           
+</body>
+</html>
